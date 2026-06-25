@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.jpa.TipoClienteEntity;
 
-public interface ITipoClienteRepositorio extends JpaRepository<TipoClienteEntity, Integer> {
+public interface ITipoClienteJpaRepositorio extends JpaRepository<TipoClienteEntity, Integer> {
 
 }

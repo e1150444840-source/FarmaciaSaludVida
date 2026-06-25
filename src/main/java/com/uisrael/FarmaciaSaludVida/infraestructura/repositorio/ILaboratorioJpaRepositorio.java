@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.jpa.LaboratorioEntity;
 
-public interface ILaboratorioRepositorio extends JpaRepository<LaboratorioEntity, Integer> {
+public interface ILaboratorioJpaRepositorio extends JpaRepository<LaboratorioEntity, Integer> {
 
 }

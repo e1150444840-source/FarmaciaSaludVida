@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.jpa.DetalleVentaEntity;
 
-public interface DetalleVenta extends JpaRepository<DetalleVentaEntity, Integer>{
+public interface IDetalleVentaJpaRepositorio extends JpaRepository<DetalleVentaEntity, Integer>{
 
 }

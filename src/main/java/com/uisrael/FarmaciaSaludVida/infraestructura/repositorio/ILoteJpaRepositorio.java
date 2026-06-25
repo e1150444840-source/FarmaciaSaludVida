@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.jpa.LoteEntity;
 
-public interface ILoteRepositorio extends JpaRepository<LoteEntity, Integer> {
+public interface ILoteJpaRepositorio extends JpaRepository<LoteEntity, Integer> {
 
 }
