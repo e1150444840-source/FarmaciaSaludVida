@@ -23,16 +23,16 @@ public class LoteEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_lote")
-	private int id_lote;
+	private int idLote;
 	
 	@Column(name = "numero_lote", length = 50)
-	private String numero_lote; 
+	private String numeroLote; 
 
 	@Column(name = "fecha_caducidad")
-	private LocalDate fecha_caducidad; 
+	private LocalDate fechaCaducidad; 
 
 	@Column(name = "fecha_ingreso")
-	private LocalDate fecha_ingreso;
+	private LocalDate fechaIngreso;
 	
 	@ManyToOne
 	@JoinColumn(name = "fkProducto")

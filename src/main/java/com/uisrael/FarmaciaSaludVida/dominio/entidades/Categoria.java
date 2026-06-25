@@ -2,29 +2,33 @@ package com.uisrael.FarmaciaSaludVida.dominio.entidades;
 
 public class Categoria {
 
-	private final int id_categoria;
-	private final String nombre_categoria;
-	
+	private final int idCategoria;
+	private final String nombreCategoria;
 	
 	//constructor
-	public Categoria(int id_categoria, String nombre_categoria) {
+	public Categoria(int idCategoria, String nombreCategoria) {
 	
-		this.id_categoria = id_categoria;
-		this.nombre_categoria = nombre_categoria;
+		this.idCategoria = idCategoria;
+		this.nombreCategoria = nombreCategoria;
 	}
-	
+
 	//getter y setter
-	public int getId_categoria() {
-		return id_categoria;
+	public int getIdCategoria() {
+		return idCategoria;
 	}
-	public String getNombre_categoria() {
-		return nombre_categoria;
+
+	public String getNombreCategoria() {
+		return nombreCategoria;
 	}
 
 	//to String
 	@Override
 	public String toString() {
-		return "Categoria [id_categoria=" + id_categoria + ", nombre_categoria=" + nombre_categoria + "]";
+		return "Categoria [idCategoria=" + idCategoria + ", nombreCategoria=" + nombreCategoria + "]";
 	}
+	
+	
+
+
 	
 }

@@ -22,10 +22,10 @@ public class FarmaciaEntity implements Serializable {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_farmacia")
-	private int id_farmacia;
+	private int idFarmacia;
 	
 	@Column(name = "nombre_farmacia", length = 100)
-	private String nombre_farmacia; 
+	private String nombreFarmacia; 
 	
 	@Column(name = "direccion", length = 100)
 	private String direccion;

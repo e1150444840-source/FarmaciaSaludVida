@@ -2,35 +2,43 @@ package com.uisrael.FarmaciaSaludVida.dominio.entidades;
 
 public class DetalleVenta {
 
-	private final int id_detalle_venta;
+	private final int idDetalleVenta;
 	private final int cantidad; 
-	private final double precio_unitario; 
+	private final double precioUnitario;
+
 	
 	// constructor
-	public DetalleVenta(int id_detalle_venta, int cantidad, double precio_unitario) {
+	public DetalleVenta(int idDetalleVenta, int cantidad, double precioUnitario) {
 		
-		this.id_detalle_venta = id_detalle_venta;
+		this.idDetalleVenta = idDetalleVenta;
 		this.cantidad = cantidad;
-		this.precio_unitario = precio_unitario;
+		this.precioUnitario = precioUnitario;
 	}
 
 	// getter y setter
-	public int getId_detalle_venta() {
-		return id_detalle_venta;
+	public int getIdDetalleVenta() {
+		return idDetalleVenta;
 	}
+
+
 	public int getCantidad() {
 		return cantidad;
 	}
-	public double getPrecio_unitario() {
-		return precio_unitario;
+
+
+	public double getPrecioUnitario() {
+		return precioUnitario;
 	}
 
 	// to String
 	@Override
 	public String toString() {
-		return "DetalleVenta [id_detalle_venta=" + id_detalle_venta + ", cantidad=" + cantidad + ", precio_unitario="
-				+ precio_unitario + "]";
-	}
+		return "DetalleVenta [idDetalleVenta=" + idDetalleVenta + ", cantidad=" + cantidad + ", precioUnitario="
+				+ precioUnitario + "]";
+	} 
+
+
+
 
 
 	

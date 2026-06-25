@@ -4,55 +4,48 @@ import java.time.LocalDate;
 
 public class Venta {
 	
-	private final int id_venta;
-	private final LocalDate fecha_emison; 
-	private final String canal_venta; 
+	private final int idVenta;
+	private final LocalDate fechaEmison; 
+	private final String canalVenta; //Física', 'En Línea
 	private final double subtotal;
 	private final double iva;
 	private final double total;
-	
 	// constructor
-	public Venta(int id_venta, LocalDate fecha_emison, String canal_venta, double subtotal, double iva, double total) {
+	public Venta(int idVenta, LocalDate fechaEmison, String canalVenta, double subtotal, double iva, double total) {
 		
-		this.id_venta = id_venta;
-		this.fecha_emison = fecha_emison;
-		this.canal_venta = canal_venta;
+		this.idVenta = idVenta;
+		this.fechaEmison = fechaEmison;
+		this.canalVenta = canalVenta;
 		this.subtotal = subtotal;
 		this.iva = iva;
 		this.total = total;
 	}
 	
 	// getter y setter
-	public int getId_venta() {
-		return id_venta;
+	public int getIdVenta() {
+		return idVenta;
 	}
-
-	public LocalDate getFecha_emison() {
-		return fecha_emison;
+	public LocalDate getFechaEmison() {
+		return fechaEmison;
 	}
-
-	public String getCanal_venta() {
-		return canal_venta;
+	public String getCanalVenta() {
+		return canalVenta;
 	}
-
 	public double getSubtotal() {
 		return subtotal;
 	}
-
 	public double getIva() {
 		return iva;
 	}
-
 	public double getTotal() {
 		return total;
 	}
-
+	
 	// to String
 	@Override
 	public String toString() {
-		return "Venta [id_venta=" + id_venta + ", fecha_emison=" + fecha_emison + ", canal_venta=" + canal_venta
+		return "Venta [idVenta=" + idVenta + ", fechaEmison=" + fechaEmison + ", canalVenta=" + canalVenta
 				+ ", subtotal=" + subtotal + ", iva=" + iva + ", total=" + total + "]";
 	}
-
 	
 }

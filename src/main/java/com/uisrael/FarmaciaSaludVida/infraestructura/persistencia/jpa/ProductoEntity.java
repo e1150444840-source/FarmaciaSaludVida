@@ -21,13 +21,13 @@ public class ProductoEntity implements Serializable  {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_producto")
-	private int id_producto;
+	private int idProducto;
 	
 	@Column(name = "nombre_producto", length = 80)
-	private String nombre_producto; 
+	private String nombreProducto; 
 	
-	@Column(name = "descricion", length = 100)
-	private String descricion; 
+	@Column(name = "descripcion", length = 100)
+	private String descripcion; 
 	
 	@ManyToOne
 	@JoinColumn(name = "fkCategoria")

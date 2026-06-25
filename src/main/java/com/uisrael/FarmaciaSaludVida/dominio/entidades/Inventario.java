@@ -2,28 +2,28 @@ package com.uisrael.FarmaciaSaludVida.dominio.entidades;
 
 public class Inventario {
 	
-	private final int id_inventario;
-	private final int stock_actual;
+	private final int idInventario;
+	private final int stockActual;
 	
 	// constructor
-	public Inventario(int id_inventario, int stock_actual) {
-		super();
-		this.id_inventario = id_inventario;
-		this.stock_actual = stock_actual;
+	public Inventario(int idInventario, int stockActual) {
+	
+		this.idInventario = idInventario;
+		this.stockActual = stockActual;
 	}
-
+	
 	// getter y setter
-	public int getId_inventario() {
-		return id_inventario;
+	public int getIdInventario() {
+		return idInventario;
 	}
-
-	public int getStock_actual() {
-		return stock_actual;
+	public int getStockActual() {
+		return stockActual;
 	}
-
+	
 	// to String
 	@Override
 	public String toString() {
-		return "Inventario [id_inventario=" + id_inventario + ", stock_actual=" + stock_actual + "]";
-	} 
+		return "Inventario [idInventario=" + idInventario + ", stockActual=" + stockActual + "]";
+	}
+	
 }

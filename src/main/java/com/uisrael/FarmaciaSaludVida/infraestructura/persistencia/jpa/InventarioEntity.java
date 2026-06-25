@@ -25,10 +25,10 @@ private static final long serialVersionUID = 1L;
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_inventario")
-	private int id_inventario;
+	private int idInventario;
 	
 	@Column(name = "stock_actual")
-	private int stock_actual;
+	private int stockActual;
 	    
     @ManyToOne
 	@JoinColumn(name = "fkFarmacia")
@@ -39,6 +39,6 @@ private static final long serialVersionUID = 1L;
 	private LoteEntity fkLote;
 	
 	@OneToMany(mappedBy = "fkInventario")
-	private List<DetalleVentaEntity> DetalleVenta;
+	private List<DetalleVentaEntity> detalleVenta;
 	
 }

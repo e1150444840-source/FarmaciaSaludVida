@@ -22,18 +22,17 @@ private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_tipo_cliente")
-	private int id_tipo_cliente;
+	private int idTipoCliente;
 	
-	@Column(name = "nombre", length = 80)
-	private String nombre; 
+	@Column(name = "nombre_tipo_cliente", length = 80)
+	private String nombreTipoCliente; 
 	
 	@Column(name = "descripcion", length = 100)
 	private String descripcion;
 	
 	@Column(name = "estado")
 	private boolean estado;
-	
-	
+		
 	@OneToMany(mappedBy = "fkTipoCliente")
 	private List<ClienteEntity> cliente;
 }

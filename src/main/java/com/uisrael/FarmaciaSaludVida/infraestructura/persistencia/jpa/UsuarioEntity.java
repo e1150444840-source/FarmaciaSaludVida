@@ -22,7 +22,7 @@ public class UsuarioEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_usuario")
-	private int id_usuario;
+	private int idUsuario;
 
 	@Column(name = "username", length = 50)
 	private String username;
@@ -31,13 +31,13 @@ public class UsuarioEntity implements Serializable {
 	private String password;
 	
 	@Column(name = "nombre_usuario", length = 50)
-	private String nombre_usuario;
+	private String nombreUsuario;
 	
 	@Column(name = "apellido_usuario", length = 50)
-	private String apellido_usuario;
+	private String apellidoUsuario;
 	
-	@Column(name = "nombre_rol", length = 50)
-	private String nombre_rol;
+	@Column(name = "rol", length = 50)
+	private String rol;
 	
 	@Column(name = "estado")
 	private boolean estado;

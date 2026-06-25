@@ -20,13 +20,13 @@ public class CategoriaEntity implements Serializable  {
 	
 	private static final long serialVersionUID = 1L;
 
-	@Id 
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_categoria")	
-	private int id_categoria;
+	private int idCategoria;
 	
 	@Column(name = "nombre_categoria", length = 100)
-	private String nombre_categoria;
+	private String nombreCategoria;
 	
 	@OneToMany(mappedBy = "fkCategoria")
 	private List<ProductoEntity> producto;

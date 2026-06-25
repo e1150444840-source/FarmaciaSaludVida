@@ -23,26 +23,26 @@ public class ClienteEntity implements Serializable {
 	
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id_categoria")
-	private int id;
+	@Column(name = "id_cliente")
+	private int idCliente;
 	
 	@Column(name = "ci", length = 10)
-	private String ci; 
+	private String ciCliente; 
 
 	@Column(name = "nombre", length = 80)
-	private String nombre; 
+	private String nombreCliente; 
 
 	@Column(name = "apellido", length = 80)
-	private String apellido;
+	private String apellidoCliente;
 	
 	@Column(name = "telefono", length = 80)
-	private String telefono;
+	private String telefonoCliente;
 	
 	@Column(name = "direccion", length = 80)
-	private String direccion;
+	private String direccionCliente;
 	
 	@Column(name = "correo", length = 80)
-	private String correo;
+	private String correoCliente;
 	
 	@ManyToOne
 	@JoinColumn(name = "fkTipoCliente")

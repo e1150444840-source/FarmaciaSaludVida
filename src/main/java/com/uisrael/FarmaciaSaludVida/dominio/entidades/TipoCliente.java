@@ -2,43 +2,41 @@ package com.uisrael.FarmaciaSaludVida.dominio.entidades;
 
 public class TipoCliente {
 
-	private final int id_tipo_cliente;
-	private final String nombre; 
+	private final int idTipoCliente;
+	private final String nombreTipoCliente; //VIP, Mayorista, persona natural
 	private final String descripcion;
-	private final boolean estado; //true:activo - false:eliminado
-
-	// constructor
-	public TipoCliente(int id_tipo_cliente, String nombre, String descripcion, boolean estado) {
+	private final boolean estado; //activo - eliminado 
 	
-		this.id_tipo_cliente = id_tipo_cliente;
-		this.nombre = nombre;
+	// constructor
+	public TipoCliente(int idTipoCliente, String nombreTipo, String descripcion, boolean estado) {
+	
+		this.idTipoCliente = idTipoCliente;
+		this.nombreTipoCliente = nombreTipo;
 		this.descripcion = descripcion;
 		this.estado = estado;
 	}
-
+	
 	// getter y setter
-	public int getId_tipo_cliente() {
-		return id_tipo_cliente;
+	public int getIdTipoCliente() {
+		return idTipoCliente;
 	}
-
-	public String getNombre() {
-		return nombre;
+	public String getNombreTipo() {
+		return nombreTipoCliente;
 	}
-
 	public String getDescripcion() {
 		return descripcion;
 	}
-
 	public boolean isEstado() {
 		return estado;
 	}
-
+	
 	// to String
 	@Override
 	public String toString() {
-		return "TipoCliente [id_tipo_cliente=" + id_tipo_cliente + ", nombre=" + nombre + ", descripcion=" + descripcion
-				+ ", estado=" + estado + "]";
+		return "TipoCliente [idTipoCliente=" + idTipoCliente + ", nombreTipo=" + nombreTipoCliente + ", descripcion="
+				+ descripcion + ", estado=" + estado + "]";
 	}
+	
 	
 	
 }

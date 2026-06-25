@@ -2,39 +2,35 @@ package com.uisrael.FarmaciaSaludVida.dominio.entidades;
 
 public class Laboratorio {
 
-	private final int id_laboratorio;
-	private final String nombre_laboratorio; 
-	private final String telefono;
+	private final int idLaboratorio;
+	private final String nombreLaboratorio; 
+	private final String telefonoLaboratorio;
 	
 	//constructor
-	public Laboratorio(int id_laboratorio, String nombre_laboratorio, String telefono) {
-		super();
-		this.id_laboratorio = id_laboratorio;
-		this.nombre_laboratorio = nombre_laboratorio;
-		this.telefono = telefono;
+	public Laboratorio(int idLaboratorio, String nombreLaboratorio, String telefonoLaboratorio) {
+		
+		this.idLaboratorio = idLaboratorio;
+		this.nombreLaboratorio = nombreLaboratorio;
+		this.telefonoLaboratorio = telefonoLaboratorio;
 	}
-
+	
 	//getter y setter
-	public int getId_laboratorio() {
-		return id_laboratorio;
+	public int getIdLaboratorio() {
+		return idLaboratorio;
 	}
-
-	public String getNombre_laboratorio() {
-		return nombre_laboratorio;
+	public String getNombreLaboratorio() {
+		return nombreLaboratorio;
 	}
-
-	public String getTelefono() {
-		return telefono;
+	public String getTelefonoLaboratorio() {
+		return telefonoLaboratorio;
 	}
-
+	
 	//to String
 	@Override
 	public String toString() {
-		return "Laboratorio [id_laboratorio=" + id_laboratorio + ", nombre_laboratorio=" + nombre_laboratorio
-				+ ", telefono=" + telefono + "]";
+		return "Laboratorio [idLaboratorio=" + idLaboratorio + ", nombreLaboratorio=" + nombreLaboratorio
+				+ ", telefonoLaboratorio=" + telefonoLaboratorio + "]";
 	}
-		
-	
 	
 	
 }

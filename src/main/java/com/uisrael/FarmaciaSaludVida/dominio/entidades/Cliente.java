@@ -2,55 +2,63 @@ package com.uisrael.FarmaciaSaludVida.dominio.entidades;
 
 public class Cliente {
 
-	private final int id;
-	private final String ci; 
-	private final String nombre; 
-	private final String apellido;
-	private final String telefono;
-	private final String direccion;
-	private final String correo;
-	
-	
+	private final int idCliente;
+	private final String ciCliente; 
+	private final String nombreCliente; 
+	private final String apellidoCliente;
+	private final String telefonoCliente;
+	private final String direccionCliente;
+	private final String correoCliente;
+		
 	//constructor
-	public Cliente(int id, String ci, String nombre, String apellido, String telefono, String direccion,
-			String correo) {
-		this.id = id;
-		this.ci = ci;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.telefono = telefono;
-		this.direccion = direccion;
-		this.correo = correo;
+	public Cliente(int idCliente, String ciCliente, String nombreCliente, String apellidoCliente,
+			String telefonoCliente, String direccionCliente, String correoCliente) {
+		super();
+		this.idCliente = idCliente;
+		this.ciCliente = ciCliente;
+		this.nombreCliente = nombreCliente;
+		this.apellidoCliente = apellidoCliente;
+		this.telefonoCliente = telefonoCliente;
+		this.direccionCliente = direccionCliente;
+		this.correoCliente = correoCliente;
 	}
-	
+
 	//getter y setter
-	public int getId() {
-		return id;
+	public int getIdCliente() {
+		return idCliente;
 	}
-	public String getCi() {
-		return ci;
+
+	public String getCiCliente() {
+		return ciCliente;
 	}
-	public String getNombre() {
-		return nombre;
+
+	public String getNombreCliente() {
+		return nombreCliente;
 	}
-	public String getApellido() {
-		return apellido;
+
+	public String getApellidoCliente() {
+		return apellidoCliente;
 	}
-	public String getTelefono() {
-		return telefono;
+
+	public String getTelefonoCliente() {
+		return telefonoCliente;
 	}
-	public String getDireccion() {
-		return direccion;
+
+	public String getDireccionCliente() {
+		return direccionCliente;
 	}
-	public String getCorreo() {
-		return correo;
-	} 
-	
+
+	public String getCorreoCliente() {
+		return correoCliente;
+	}
+
 	//to String
 	@Override
 	public String toString() {
-		return "cliente [id=" + id + ", ci=" + ci + ", nombre=" + nombre + ", apellido=" + apellido + ", telefono="
-				+ telefono + ", direccion=" + direccion + ", correo=" + correo + "]";
+		return "Cliente [idCliente=" + idCliente + ", ciCliente=" + ciCliente + ", nombreCliente=" + nombreCliente
+				+ ", apellidoCliente=" + apellidoCliente + ", telefonoCliente=" + telefonoCliente
+				+ ", direccionCliente=" + direccionCliente + ", correoCliente=" + correoCliente + "]";
 	}
+	
 	
 }

@@ -25,13 +25,13 @@ public class VentaEntity implements Serializable {
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_venta")
-	private int id_venta;
+	private int idVenta;
 	
 	@Column(name = "fecha_emision")
-	private LocalDate fecha_emision; 
+	private LocalDate fechaEmision; 
 	
 	@Column(name = "canal_venta")
-	private String canal_venta;
+	private String canalVenta;
 	
 	@Column(name = "subtotal")
 	private double subtotal;
@@ -55,6 +55,6 @@ public class VentaEntity implements Serializable {
 	private UsuarioEntity fkUsuario;
 	
 	@OneToMany(mappedBy = "fkVenta")
-	private List<DetalleVentaEntity> DetalleVenta;
+	private List<DetalleVentaEntity> detalleVenta;
 	
 }

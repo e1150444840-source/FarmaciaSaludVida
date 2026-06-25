@@ -14,22 +14,29 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "laboratorio")
-public class LaboratorioEntity implements Serializable {
+@Table(name = "vehiculo")
+public class VehiculoEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id_laboratorio")
-	private int idLaboratorio;
+	@Column(name = "id_vehiculo")
+	private int idVehiculo;
 	
-	@Column(name = "nombre_laboratorio", length = 100)
-	private String nombreLaboratorio; 
+	@Column(name = "placa", length = 10)
+	private String placa; 
 	
-	@Column(name = "telefono", length = 100)
-	private String telefonoLaboratorio;
+	@Column(name = "capacidad", length = 50)
+	private String capacidad;
 	
-	@OneToMany(mappedBy = "fkLaboratorio")
-	private List<ProductoEntity> producto;
+	@Column(name = "estado_disponibilidad", length = 20)
+	private String estadoDisponibilidad;
+	
+	@OneToMany(mappedBy = "fkVehiculo")
+	private List<PedidoEntity> pedido;
+	
+	
+	
+
 }
