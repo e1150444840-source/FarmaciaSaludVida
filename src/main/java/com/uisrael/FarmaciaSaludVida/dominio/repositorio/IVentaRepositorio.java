@@ -6,9 +6,9 @@ import java.util.Optional;
 import com.uisrael.FarmaciaSaludVida.dominio.entidades.Venta;
 
 public interface IVentaRepositorio {
-	Venta guardar(Venta venta);
-	Optional<Venta> buscarPorId(int id);
+	Venta guardar(Venta nuevaVenta);
+	Optional<Venta> buscarPorId(int idVenta);
 	List<Venta> listarTodos();
 	
-	void eliminar(int id); 
+	void eliminar(int idVenta); 
 }

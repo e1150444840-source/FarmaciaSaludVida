@@ -45,7 +45,7 @@ public class ClienteEntity implements Serializable {
 	private String correoCliente;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkTipoCliente")
+	@JoinColumn(name = "fk_tipo_cliente")
 	private TipoClienteEntity fkTipoCliente;
 	
 	@OneToMany(mappedBy = "fkCliente")

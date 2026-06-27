@@ -7,9 +7,9 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Cliente;
 
 public interface IClienteRepositorio {
 
-	Cliente guardar(Cliente cliente);
-	Optional<Cliente> buscarPorId(int id);
+	Cliente guardar(Cliente nuevoCliente);
+	Optional<Cliente> buscarPorId(int idCliente);
 	List<Cliente> listarTodos();
 	
-	void eliminar(int id); 
+	void eliminar(int idCliente); 
 }

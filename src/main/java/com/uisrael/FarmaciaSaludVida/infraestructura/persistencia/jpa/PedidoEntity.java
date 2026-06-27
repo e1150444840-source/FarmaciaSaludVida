@@ -35,14 +35,10 @@ public class PedidoEntity implements Serializable {
 	private String direccionPedido;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkVenta")
+	@JoinColumn(name = "fk_venta")
 	private VentaEntity fkVenta;
-	
+		
 	@ManyToOne
-	@JoinColumn(name = "fkCliente")
-	private ClienteEntity fkCliente;
-	
-	@ManyToOne
-	@JoinColumn(name = "fkVehiculo")
+	@JoinColumn(name = "fk_vehiculo")
 	private VehiculoEntity fkVehiculo;
 }

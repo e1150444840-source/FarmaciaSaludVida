@@ -8,9 +8,9 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Laboratorio;
 
 public interface ILaboratorioRepositorio {
 
-	Laboratorio guardar(Laboratorio laboratorio);
-	Optional<Laboratorio> buscarPorId(int id);
+	Laboratorio guardar(Laboratorio nuevoLaboratorio);
+	Optional<Laboratorio> buscarPorId(int idLaboratorio);
 	List<Laboratorio> listarTodos();
 	
-	void eliminar(int id);
+	void eliminar(int idLaboratorio);
 }

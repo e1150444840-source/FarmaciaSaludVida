@@ -43,15 +43,11 @@ public class VentaEntity implements Serializable {
 	private double total;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkCliente")
+	@JoinColumn(name = "fk_cliente")
 	private ClienteEntity fkCliente;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkFarmacia")
-	private FarmaciaEntity fkFarmacia;
-	
-	@ManyToOne
-	@JoinColumn(name = "fkUsuario")
+	@JoinColumn(name = "fk_usuario")
 	private UsuarioEntity fkUsuario;
 	
 	@OneToMany(mappedBy = "fkVenta")

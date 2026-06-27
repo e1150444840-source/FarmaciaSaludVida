@@ -7,10 +7,10 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Farmacia;
 
 public interface IFarmaciaRepositorio {
 
-	Farmacia guardar(Farmacia farmacia);
-	Optional<Farmacia> buscarPorId(int id);
+	Farmacia guardar(Farmacia nuevaFarmacia);
+	Optional<Farmacia> buscarPorId(int idFarmacia);
 	List<Farmacia> listarTodos();
 	
-	void eliminar(int id); 
+	void eliminar(int idFarmacia); 
 	
 }

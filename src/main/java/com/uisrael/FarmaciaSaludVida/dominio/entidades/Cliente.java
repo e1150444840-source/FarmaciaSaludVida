@@ -1,5 +1,7 @@
 package com.uisrael.FarmaciaSaludVida.dominio.entidades;
 
+import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.jpa.TipoClienteEntity;
+
 public class Cliente {
 
 	private final int idCliente;
@@ -9,11 +11,13 @@ public class Cliente {
 	private final String telefonoCliente;
 	private final String direccionCliente;
 	private final String correoCliente;
-		
+	private TipoClienteEntity fkTipoCliente;
+	
 	//constructor
 	public Cliente(int idCliente, String ciCliente, String nombreCliente, String apellidoCliente,
-			String telefonoCliente, String direccionCliente, String correoCliente) {
-		super();
+			String telefonoCliente, String direccionCliente, String correoCliente, TipoClienteEntity fkTipoCliente) {
+
+
 		this.idCliente = idCliente;
 		this.ciCliente = ciCliente;
 		this.nombreCliente = nombreCliente;
@@ -21,9 +25,18 @@ public class Cliente {
 		this.telefonoCliente = telefonoCliente;
 		this.direccionCliente = direccionCliente;
 		this.correoCliente = correoCliente;
+		this.fkTipoCliente = fkTipoCliente;
+	}
+	
+	//getter y setter
+	public TipoClienteEntity getFkTipoCliente() {
+		return fkTipoCliente;
 	}
 
-	//getter y setter
+	public void setFkTipoCliente(TipoClienteEntity fkTipoCliente) {
+		this.fkTipoCliente = fkTipoCliente;
+	}
+
 	public int getIdCliente() {
 		return idCliente;
 	}
@@ -57,8 +70,8 @@ public class Cliente {
 	public String toString() {
 		return "Cliente [idCliente=" + idCliente + ", ciCliente=" + ciCliente + ", nombreCliente=" + nombreCliente
 				+ ", apellidoCliente=" + apellidoCliente + ", telefonoCliente=" + telefonoCliente
-				+ ", direccionCliente=" + direccionCliente + ", correoCliente=" + correoCliente + "]";
+				+ ", direccionCliente=" + direccionCliente + ", correoCliente=" + correoCliente + ", fkTipoCliente="
+				+ fkTipoCliente + "]";
 	}
-	
 	
 }

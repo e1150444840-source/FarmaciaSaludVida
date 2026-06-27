@@ -7,9 +7,9 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.TipoCliente;
 
 public interface ITipoClienteRepositorio {
 
-	TipoCliente guardar(TipoCliente tipoCliente);
-	Optional<TipoCliente> buscarPorId(int id);
+	TipoCliente guardar(TipoCliente nuevoTipoCliente);
+	Optional<TipoCliente> buscarPorId(int idTipoCliente);
 	List<TipoCliente> listarTodos();
 	
-	void eliminar (int id); 
+	void eliminar (int idTipoCliente); 
 }

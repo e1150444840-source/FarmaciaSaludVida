@@ -8,10 +8,10 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Categoria;
 
 
 public interface ICategoriaRepositorio {
-	Categoria guardar(Categoria categoria);
-	Optional<Categoria> buscarPorId(int id);
+	Categoria guardar(Categoria nuevaCategoria);
+	Optional<Categoria> buscarPorId(int idCategoria);
 	List<Categoria> listarTodos();
 	
-	void eliminar(int id);
+	void eliminar(int idCategoria);
 
 }

@@ -7,10 +7,10 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Pedido;
 
 public interface IPedidoRepositorio {
 
-	Pedido guardar(Pedido pedido);
-	Optional<Pedido> buscarPorId(int id);
+	Pedido guardar(Pedido nuevoPedido);
+	Optional<Pedido> buscarPorId(int idPedido);
 	List<Pedido> listarTodos();
 	
-	void eliminar(int id); 
+	void eliminar(int idPedido); 
 	
 }

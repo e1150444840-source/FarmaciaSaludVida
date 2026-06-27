@@ -30,11 +30,11 @@ public class ProductoEntity implements Serializable  {
 	private String descripcion; 
 	
 	@ManyToOne
-	@JoinColumn(name = "fkCategoria")
+	@JoinColumn(name = "fk_categoria")
 	private CategoriaEntity fkCategoria;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkLaboratorio")
+	@JoinColumn(name = "fk_laboratorio")
 	private LaboratorioEntity fkLaboratorio;
 	
 }

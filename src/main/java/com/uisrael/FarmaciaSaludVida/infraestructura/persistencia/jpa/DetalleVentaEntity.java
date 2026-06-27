@@ -31,11 +31,11 @@ public class DetalleVentaEntity implements Serializable {
 	private double precioUnitario;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkVenta")
+	@JoinColumn(name = "fk_venta")
 	private VentaEntity fkVenta;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkInventario")
+	@JoinColumn(name = "fk_inventario")
 	private InventarioEntity fkInventario;
 	
 }

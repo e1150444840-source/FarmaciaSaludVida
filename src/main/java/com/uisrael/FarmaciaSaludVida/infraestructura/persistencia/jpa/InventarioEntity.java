@@ -31,11 +31,11 @@ private static final long serialVersionUID = 1L;
 	private int stockActual;
 	    
     @ManyToOne
-	@JoinColumn(name = "fkFarmacia")
+	@JoinColumn(name = "fk_farmacia")
 	private FarmaciaEntity fkFarmacia;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkLote")
+	@JoinColumn(name = "fk_lote")
 	private LoteEntity fkLote;
 	
 	@OneToMany(mappedBy = "fkInventario")

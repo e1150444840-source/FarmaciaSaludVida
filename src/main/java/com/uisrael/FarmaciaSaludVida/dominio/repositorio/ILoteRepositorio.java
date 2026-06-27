@@ -7,9 +7,9 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Lote;
 
 public interface ILoteRepositorio {
 
-	Lote guardar(Lote lote);
-	Optional<Lote> buscarPorId(int id);
+	Lote guardar(Lote nuevoLote);
+	Optional<Lote> buscarPorId(int idLote);
 	List<Lote> listarTodos();
 	
-	void eliminar(int id);
+	void eliminar(int idLote);
 }

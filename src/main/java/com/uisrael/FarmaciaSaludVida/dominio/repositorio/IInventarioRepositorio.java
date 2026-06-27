@@ -7,9 +7,9 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Inventario;
 
 public interface IInventarioRepositorio {
 
-	Inventario guardar(Inventario inventario);
-	Optional<Inventario> buscarPorId(int id);
+	Inventario guardar(Inventario nuevoInventario);
+	Optional<Inventario> buscarPorId(int idInventario);
 	List<Inventario> listarTodos();
 	
-	void eliminar(int id);
+	void eliminar(int idInventario);
 }

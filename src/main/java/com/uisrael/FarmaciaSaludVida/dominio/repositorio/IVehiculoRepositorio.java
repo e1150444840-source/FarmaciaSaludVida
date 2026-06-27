@@ -7,9 +7,9 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Vehiculo;
 
 public interface IVehiculoRepositorio {
 
-	Vehiculo guardar(Vehiculo vehiculo);
-	Optional<Vehiculo> buscarPorId(int id);
+	Vehiculo guardar(Vehiculo nuevoVehiculo);
+	Optional<Vehiculo> buscarPorId(int idVehiculo);
 	List<Vehiculo> listarTodos();
 	
-	void eliminar(int id); 
+	void eliminar(int idVehiculo); 
 }

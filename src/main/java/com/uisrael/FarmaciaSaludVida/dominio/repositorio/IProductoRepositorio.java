@@ -7,9 +7,9 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Producto;
 
 
 public interface IProductoRepositorio {
-	Producto guardar(Producto producto);
-	Optional<Producto> buscarPorId(int id);
+	Producto guardar(Producto nuevoProducto);
+	Optional<Producto> buscarPorId(int idProducto);
 	List<Producto> listarTodos();
 	
-	void eliminar(int id);
+	void eliminar(int idProducto);
 }

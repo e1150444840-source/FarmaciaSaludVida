@@ -35,7 +35,7 @@ public class LoteEntity implements Serializable {
 	private LocalDate fechaIngreso;
 	
 	@ManyToOne
-	@JoinColumn(name = "fkProducto")
+	@JoinColumn(name = "fk_producto")
 	private ProductoEntity fkProducto;
 	
 }

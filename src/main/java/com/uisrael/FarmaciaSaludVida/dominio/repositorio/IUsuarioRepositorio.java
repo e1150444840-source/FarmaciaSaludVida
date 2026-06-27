@@ -7,10 +7,10 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Usuario;
 
 public interface IUsuarioRepositorio {
 
-	Usuario guardar(Usuario usuario);
-	Optional<Usuario> buscarPorId(int id);
+	Usuario guardar(Usuario nuevoUsuario);
+	Optional<Usuario> buscarPorId(int idUsuario);
 	List<Usuario> listarTodos();
 	
-	void eliminar(int id);  
+	void eliminar(int idUsuario);  
 	
 }

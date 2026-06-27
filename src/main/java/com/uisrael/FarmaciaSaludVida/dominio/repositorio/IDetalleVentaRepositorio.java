@@ -7,10 +7,10 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.DetalleVenta;
 
 public interface IDetalleVentaRepositorio {
 
-	DetalleVenta guardar(DetalleVenta detalleVenta);
-	Optional<DetalleVenta> buscarPorId(int id);
+	DetalleVenta guardar(DetalleVenta nuevoDetalleVenta);
+	Optional<DetalleVenta> buscarPorId(int idDetalleVenta);
 	List<DetalleVenta> listarTodos();
 	
-	void eliminar(int id);  
+	void eliminar(int idDetalleVenta);  
 	
 }
