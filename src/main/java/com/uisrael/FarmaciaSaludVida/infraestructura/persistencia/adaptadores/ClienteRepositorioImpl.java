@@ -7,15 +7,15 @@ import com.uisrael.FarmaciaSaludVida.dominio.entidades.Cliente;
 import com.uisrael.FarmaciaSaludVida.dominio.repositorio.IClienteRepositorio;
 import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.jpa.ClienteEntity;
 import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.mapeadores.IClienteJpaMapper;
-import com.uisrael.FarmaciaSaludVida.infraestructura.repositorio.ICienteJpaRepositorio;
+import com.uisrael.FarmaciaSaludVida.infraestructura.repositorio.IClienteJpaRepositorio;
 
 public class ClienteRepositorioImpl implements IClienteRepositorio {
 
-	private final ICienteJpaRepositorio jpaRepositorio;
+	private final IClienteJpaRepositorio jpaRepositorio;
 	private final IClienteJpaMapper entityMapper;
 
 	// constructor
-	public ClienteRepositorioImpl(ICienteJpaRepositorio jpaRepositorio, IClienteJpaMapper entityMapper) {
+	public ClienteRepositorioImpl(IClienteJpaRepositorio jpaRepositorio, IClienteJpaMapper entityMapper) {
 
 		this.jpaRepositorio = jpaRepositorio;
 		this.entityMapper = entityMapper;

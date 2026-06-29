@@ -2,18 +2,15 @@ package com.uisrael.FarmaciaSaludVida.aplicacion.casouso.impl;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.uisrael.FarmaciaSaludVida.aplicacion.casouso.entrada.ICategoriaCasoUso;
 import com.uisrael.FarmaciaSaludVida.dominio.entidades.Categoria;
 import com.uisrael.FarmaciaSaludVida.dominio.repositorio.ICategoriaRepositorio;
 
-@Service
-public class CategoriaCasoUsosImpl implements ICategoriaCasoUso {
+public class CategoriaCasoUsoImpl implements ICategoriaCasoUso {
 
 	private final ICategoriaRepositorio repositorio;
 
-	public CategoriaCasoUsosImpl(ICategoriaRepositorio repositorio) {
+	public CategoriaCasoUsoImpl(ICategoriaRepositorio repositorio) {
 
 		this.repositorio = repositorio;
 	}
@@ -27,9 +24,7 @@ public class CategoriaCasoUsosImpl implements ICategoriaCasoUso {
 
 	@Override
 	public Categoria obtenerPorId(int idCategoria) {
-		return repositorio.buscarPorId(idCategoria)
-				.orElseThrow(() -> 
-				new RuntimeException("Cliente no encontrado"));
+		return repositorio.buscarPorId(idCategoria).orElseThrow(() -> new RuntimeException("Cliente no encontrado"));
 	}
 
 	@Override

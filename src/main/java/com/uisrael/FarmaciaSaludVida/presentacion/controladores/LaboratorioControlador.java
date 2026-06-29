@@ -45,7 +45,7 @@ public class LaboratorioControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idLaboratorio}")
 	public LaboratorioResponseDto buscarPorId(int idFarmacia) {
 		return mapper.toResponseDto(laboratorioCasoUso.obtenerPorId(idFarmacia));
 	}

@@ -45,7 +45,7 @@ public class ProductoControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idProducto}")
 	public ProductoResponseDto buscarPorId(int idProducto) {
 		return mapper.toResponseDto(productoCasoUso.obtenerPorId(idProducto));
 	}

@@ -45,7 +45,7 @@ public class InventarioControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idInventario}")
 	public InventarioResponseDto buscarPorId(int idInventario) {
 		return mapper.toResponseDto(inventarioCasoUso.obtenerPorId(idInventario));
 	}

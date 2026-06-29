@@ -46,7 +46,7 @@ public class CategoriaControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idCategoria}")
 	public CategoriaResponseDto buscarPorId(int idCategoria) {
 		return mapper.toResponseDto(categoriaCasoUso.obtenerPorId(idCategoria));
 	}

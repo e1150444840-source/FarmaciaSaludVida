@@ -45,7 +45,7 @@ public class FarmaciaControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idFarmacia}")
 	public FarmaciaResponseDto buscarPorId(int idFarmacia) {
 		return mapper.toResponseDto(farmaciaCasoUso.obtenerPorId(idFarmacia));
 	}

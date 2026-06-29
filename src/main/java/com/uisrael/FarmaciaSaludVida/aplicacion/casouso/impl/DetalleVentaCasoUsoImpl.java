@@ -2,18 +2,15 @@ package com.uisrael.FarmaciaSaludVida.aplicacion.casouso.impl;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
 import com.uisrael.FarmaciaSaludVida.aplicacion.casouso.entrada.IDetalleVentaCasoUso;
 import com.uisrael.FarmaciaSaludVida.dominio.entidades.DetalleVenta;
 import com.uisrael.FarmaciaSaludVida.dominio.repositorio.IDetalleVentaRepositorio;
 
-@Service
-public class DetalleVentaCasoUsosImpl implements IDetalleVentaCasoUso {
+public class DetalleVentaCasoUsoImpl implements IDetalleVentaCasoUso {
 
 	private final IDetalleVentaRepositorio repositorio;
 
-	public DetalleVentaCasoUsosImpl(IDetalleVentaRepositorio repositorio) {
+	public DetalleVentaCasoUsoImpl(IDetalleVentaRepositorio repositorio) {
 
 		this.repositorio = repositorio;
 	}

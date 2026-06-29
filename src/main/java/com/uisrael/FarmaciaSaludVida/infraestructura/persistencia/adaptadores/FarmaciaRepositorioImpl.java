@@ -9,13 +9,13 @@ import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.jpa.FarmaciaEn
 import com.uisrael.FarmaciaSaludVida.infraestructura.persistencia.mapeadores.IFarmaciaJpaMapper;
 import com.uisrael.FarmaciaSaludVida.infraestructura.repositorio.IFarmaciaJpaRepositorio;
 
-public class IFarmaciaRepositorioImpl implements IFarmaciaRepositorio {
+public class FarmaciaRepositorioImpl implements IFarmaciaRepositorio {
 
 	private final IFarmaciaJpaRepositorio jpaRepositorio;
 	private final IFarmaciaJpaMapper entityMapper;
 
 	// constructor
-	public IFarmaciaRepositorioImpl(IFarmaciaJpaRepositorio jpaRepositorio, IFarmaciaJpaMapper entityMapper) {
+	public FarmaciaRepositorioImpl(IFarmaciaJpaRepositorio jpaRepositorio, IFarmaciaJpaMapper entityMapper) {
 
 		this.jpaRepositorio = jpaRepositorio;
 		this.entityMapper = entityMapper;

@@ -45,7 +45,7 @@ public class LoteControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idLote}")
 	public LoteResponseDto buscarPorId(int idLote) {
 		return mapper.toResponseDto(loteCasoUso.obtenerPorId(idLote));
 	}

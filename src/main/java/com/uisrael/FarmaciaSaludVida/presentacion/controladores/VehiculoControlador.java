@@ -45,7 +45,7 @@ public class VehiculoControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idVehiculo}")
 	public VehiculoResponseDto buscarPorId(int idVehiculo) {
 		return mapper.toResponseDto(vehiculoCasoUso.obtenerPorId(idVehiculo));
 	}

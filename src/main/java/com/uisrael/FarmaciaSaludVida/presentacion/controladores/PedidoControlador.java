@@ -45,7 +45,7 @@ public class PedidoControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idPedido}")
 	public PedidoResponseDto buscarPorId(int idPedido) {
 		return mapper.toResponseDto(pedidoCasoUso.obtenerPorId(idPedido));
 	}

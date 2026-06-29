@@ -46,7 +46,7 @@ public class VentaControlador {
 
 	}
 
-	@GetMapping
+	@GetMapping("/{idVenta}")
 	public VentaResponseDto buscarPorId(int idVenta) {
 		return mapper.toResponseDto(ventaCasoUso.obtenerPorId(idVenta));
 	}
